@@ -107,7 +107,7 @@ module.exports = {
 			{
 				docs: {
 					sidebarPath: require.resolve('./sidebars.js'),
-					editUrl: 'https://github.com/ACheckin/acheckin-documents/edit/master/website/',
+					editUrl: 'https://github.com/ACheckin/acheckin-documents/edit/master/',
 					remarkPlugins: [require('./src/plugins/remark-npm2yarn')]
 				},
 				theme: {
