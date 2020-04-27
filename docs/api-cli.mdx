@@ -1,0 +1,71 @@
+---
+id: api-cli
+title: CLI
+sidebar_label: CLI
+---
+
+## ACheckin CLi Commands
+
+### acheckin login
+Đăng nhập tài khoản trên [ACheckin Connect](https://developer.acheckin.io)
+```bash
+acheckin login
+```
+
+### acheckin logout
+Đăng xuất khoản, để có thể sử dụng tài khoản khác
+```bash
+acheckin logout
+```
+
+### acheckin init
+
+Tạo ứng dụng của bạn trên ACheckin
+
+```bash
+acheckin init <App Name> [options]
+```
+#### options
+
+| Options  | Default  |  Description |
+|---|---|---|
+| template | typescript |  Tạo ứng dụng sử dụng template là reactjs và typescript |
+| id |  |  Tạo ứng dụng với package name trong trong file [config.json](config) |
+
+:::note
+Một số loại template mà `ACheckin` cung cấp sẵn cho bạn `html`, `typescript`
+:::
+
+### acheckin run
+Chạy ứng ụng trên môi trường dev
+
+```bash
+acheckin run
+```
+> Câu lệnh sẽ chạy lệnh `start` của bạn trong file `package.json`
+
+:::tip
+Sau khi `init` ứng dụng xong bạn có thể chạy lệnh `acheckin run`, trên màn hình ứng dụng Terminal của bạn sẽ xuất hiện QRCode, bạn có thể mở ứng dụng `ACheckin` lên scan và bắt đầu tạo app của mình
+:::
+
+### acheckin qr
+Tạo QRCode để có thể vào môi trường dev trên ứng dụng `ACheckin`
+
+```bash
+acheckin qr [options]
+```
+#### options
+
+| Options   |  Description |
+|---|---|
+| ip | Địa chỉ ip LAN trên máy tính |
+| p |  Port mà ứng dụng của bạn đang chạy |
+
+### acheckin build
+Build và deploy ứng dụng của bạn lên [ACheckin Connect](https://developer.acheckin.io)
+
+:::danger Impotant
+Bạn cần đăng nhập tài khoản `acheckin login` trước khi có thể deploy ứng dụng
+:::
+
+

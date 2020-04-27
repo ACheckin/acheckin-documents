@@ -1,0 +1,42 @@
+---
+id: permissions
+title: Quyền truy cập
+sidebar_label: Quyền truy cập
+---
+
+:::note
+Để có thể truy cập vào các tài nguyên trên ứng dụng ACheckin bạn cần được cấp các quyền sau đây
+:::
+
+
+## Quyền truy cập
+| Permission  | Description  |  Application Type  |
+|---|---|---|
+|`basic_info`| Thông tin cá nhân cơ bản | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL` |
+|`ws_full_info`| Thông tin cá nhân nâng cao, tất cả thông tin của người dùng |  `WORKSPACE`, `WORKSPACE_ENTERPRISE` |
+|`email`| Lấy email | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`phone_number`| Lấy số điện thoại | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL` |
+|`event`| Lấy thông tin sự kiện nhân viên, người dùng | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL` |
+|`ws_inventory`|  Quản lý kho hàng | `WORKSPACE`, `WORKSPACE_ENTERPRISE` |
+|`ws_leader`|  Thông tin cấp quản lý | `WORKSPACE`, `WORKSPACE_ENTERPRISE` |
+|`ws_staff_checkin`| Lấy thông tin checkin nhân viên  | `WORKSPACE`, `WORKSPACE_ENTERPRISE` |
+|`ws_meeting`| Thông tin phòng họp  | `WORKSPACE`, `WORKSPACE_ENTERPRISE` |
+|`basic_device`| Thông tin device cơ bản | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_hardware`| Thông tin phần cứng của device | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_battery`| Thông tin về pin của device | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_ip`| Thông tin địa chỉ ip | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_camera`| Sử dụng các function liên quan đến camera |`GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL` |
+|`device_notification`| Sử dụng các function liên quan đến notification | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_location`| Sử dụng các function liên quan đến location | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_storage`| Sử dụng các function liên quan đến storage |`GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL` |
+|`device_shake`| Sử dụng các function liên quan đến shake event | `GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL`|
+|`device_app_state`| Sử dụng event liên quan đến state |`GLOBAL`, `WORKSPACE`, `WORKSPACE_ENTERPRISE`, `PERSONAL` |
+
+## Cách sử dụng
+Bạn có thể sử dụng quyền bằng cách thêm quyền truy cập vào file [config.json](config) của mình
+```json
+{
+    // ...
+    "permissions": ["basic_info"]
+}
+```

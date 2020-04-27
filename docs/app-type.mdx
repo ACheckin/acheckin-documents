@@ -1,0 +1,60 @@
+---
+id: app-type
+title: Các loại app trên ACheckin
+sidebar_label: Loại app
+---
+
+:::note
+Các loại app mà ACheckin cung cấp cho bạn
+:::
+
+## App Global
+> Loại app chỉ dùng được trên `PERSONAL` space
+
+:::danger Quan trọng
+Để có thể sử dụng được app `GLOBAL` bạn cần phải được `ACheckin` xét duyệt
+:::
+
+Bạn cần thêm loại app phía dưới vào file [config.json](config) của mình
+```json
+{
+    // ...
+    "app_type": "global"
+}
+```
+
+## App personal
+> Loại app chỉ dùng được trên `PERSONAL` space
+
+Bạn cần thêm loại app phía dưới vào file [config.json](config) của mình
+```json
+{
+    // ...
+    "app_type": "personal"
+}
+```
+
+## App Workspace
+> Loại app chỉ dùng được trên `WORKSPACE`
+:::danger Quan trọng
+Để có thể sử dụng được app `WORKSPACE` bạn cần phải được `ACheckin` xét duyệt
+:::
+
+Bạn cần thêm loại app phía dưới vào file [config.json](config) của mình
+```json
+{
+    // ...
+    "app_type": "workspace"
+}
+```
+
+## App Workspace Enterprise
+> Loại app chỉ dùng được trên `WORkSPACE`
+
+Bạn cần thêm loại app phía dưới vào file [config.json](config) của mình
+```json
+{
+    // ...
+    "app_type": "workspace_enterprise"
+}
+```
